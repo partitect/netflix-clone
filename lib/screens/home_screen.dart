@@ -60,7 +60,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           'assets/svg/logo.svg',
                           height: 30.0,
                           width: 30.0,
-                          color: Colors.red,
                         ),
                       ),
                       Container(
