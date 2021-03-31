@@ -1,4 +1,4 @@
-const List trendingMovieList = [
+var trendingMovieList = [
   {
     "page": 1,
     "results": [
