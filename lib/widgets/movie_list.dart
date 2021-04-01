@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 SliverToBoxAdapter horizontalMovieList(
     List<Map<String, Object>> jsonList, String movieTitle) {
@@ -35,22 +36,27 @@ SliverToBoxAdapter horizontalMovieList(
                   onTap: () {
                     //displayBottomSheet( context,jsonList[index], "2");
                   },
-                  child: Container(
-                    margin: EdgeInsets.only(right: 7),
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: Colors.brown,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(5),
+                  child: CachedNetworkImage(
+                    imageUrl: "https://image.tmdb.org/t/p/original$posterPath",
+                    imageBuilder: (context, imageProvider) => Container(
+                      margin: EdgeInsets.only(right: 7),
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.brown,
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(5),
+                        ),
+                        image: DecorationImage(
+                          image: imageProvider,
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                      image: DecorationImage(
-                        image: NetworkImage(
-                            "https://image.tmdb.org/t/p/original$posterPath"),
-                        fit: BoxFit.cover,
-                      ),
+                      width: MediaQuery.of(context).size.width / 3.5,
+                      height: 170,
                     ),
-                    width: MediaQuery.of(context).size.width / 3.5,
-                    height: 170,
+                    placeholder: (context, url) =>
+                        Center(child: CircularProgressIndicator()),
+                    errorWidget: (context, url, error) => Icon(Icons.error),
                   ),
                 );
               },

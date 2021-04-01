@@ -30,7 +30,7 @@ dependencies:
   flutter_svg: ^0.19.3
   google_fonts:
   sliver_stretch_header: ^0.2.0
-  cached_network_image_builder: ^0.1.0
+  cached_network_image:
 
 dev_dependencies:
   flutter_test:
