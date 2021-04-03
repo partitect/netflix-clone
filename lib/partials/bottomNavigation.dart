@@ -46,7 +46,6 @@ class _BottomBarNavigationState extends State<BottomBarNavigation> {
       ],
       currentIndex: _selectedIndex,
       selectedItemColor: Colors.white,
-      unselectedLabelStyle: TextStyle(color: Colors.red),
       onTap: _onItemTapped,
     );
   }
