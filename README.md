@@ -3,7 +3,7 @@
 ## App Screenshot
 
 ![App Screenshot](https://raw.githubusercontent.com/partitect/netflix-clone/main/assets/img/screen_shot.png "Clone App Screenshot")
-
+<img src="https://raw.githubusercontent.com/partitect/netflix-clone/main/assets/img/screen_shot.png" width="200" height="200" />
 A new Flutter project.
 
 ## Getting Started
