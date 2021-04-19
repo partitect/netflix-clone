@@ -2,7 +2,7 @@
 
 ## App Screenshot
 
-<img src="https://raw.githubusercontent.com/partitect/netflix-clone/main/assets/img/screen_shot.png" width="450" height="100%" style="object-fit:cover; />
+<img src="https://raw.githubusercontent.com/partitect/netflix-clone/main/assets/img/screen_shot.png" width="450" height="100%" style="object-fit:cover;" />
 
 A new Flutter project.
 
