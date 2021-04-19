@@ -3,6 +3,8 @@
 App Screenshot
 [appScreenshot]: https://raw.githubusercontent.com/partitect/netflix-clone/main/assets/img/screen_shot.png "App Screenshot"
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 A new Flutter project.
 
 ## Getting Started
