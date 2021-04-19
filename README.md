@@ -1,5 +1,8 @@
 # netflix_clone
 
+App Screenshot
+[appScreenshot]: https://raw.githubusercontent.com/partitect/netflix-clone/main/assets/img/screen_shot.png "App Screenshot"
+
 A new Flutter project.
 
 ## Getting Started
